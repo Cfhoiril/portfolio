@@ -7,18 +7,38 @@
 
     <title>Error 404</title>
 
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon-black.png"
+      type="image/x-icon"
+    />
+
     <link rel="stylesheet" href="./assets/css/404.css" />
   </head>
 
   <body>
-    <a href="https://iamchoiiril.glitch.me"
-      ><span id="logo" aria-label="Google"></span
-    ></a>
-    <p><b>404.</b> <ins>That's an error.</ins></p>
+    <div id="container">
+      <div class="content">
+        <h2>Error 404</h2>
+        <h4>Page Not Found</h4>
+        <p>
+          The page you were looking for does not exist. You may have mistyped
+          the URL or the page may have moved.
+        </p>
 
-    <p>
-      The requested URL <code>/</code> was not found on this server.
-      <ins>That's all we know.</ins>
-    </p>
+        <a href="/">Return Home</a>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      var container = document.getElementById("container");
+      window.onmousemove = function (e) {
+        var x = e.clientX / 10,
+          y = e.clientY / 10;
+
+        container.style.backgroundPositionX = x + "px";
+        container.style.backgroundPositionY = y + "px";
+      };
+    </script>
   </body>
 </html>
